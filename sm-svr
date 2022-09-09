@@ -11,8 +11,8 @@ echo "<!DOCTYPE html>
 </head>
 <body>" > index.html
 scriptName=`basename $0`
-echo "$( find * -type f -name "*.mp4" -o -name "*.mkv")" | while read file; do
-[ $file = $scriptName ] || [ $file = $index ] || echo "<p><a href=\"$file\"> $file </a></p>" >> index.html
+echo "$( find * -type f -name "*.mp4" -o -name "*.mkv" -o -name "*.webm")" | while read file; do
+[ "$file" = "$scriptName" ] || [ "$file" = "$index" ] || echo "<p><a href=\"$file\"> $file </a></p>" >> index.html
 done
 echo "</body>
 </html>" >> index.html
