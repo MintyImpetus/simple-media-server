@@ -5,7 +5,6 @@ title="Media Player"
 index="index.html"
 
 #Program
-
 echo "<!DOCTYPE html>
 <html>
 <head>
